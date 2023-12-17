@@ -1,0 +1,116 @@
+/* variables */
+:root {
+    /*----=COLORS=-----*/
+
+    /*primary*/
+    --color-vDark-magenta: hsl(300, 43%, 22%);
+    --color-soft-pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --color-dark-gr-magenta: hsl(303, 10%, 53%);
+    --color-light-gr-magenta: hsl(300, 24%, 96%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* WEBSITE */
+
+html {
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    font-size: 15px;
+    grid-template-columns: 1fr 325px 1fr;
+}
+
+.container {
+    text-align: center;
+    max-width: 350px;
+    grid-column: 2/3;
+}
+
+.header__title {
+    color: var(--color-vDark-magenta);
+    max-width: 70%;
+    margin: 3rem auto 1rem;
+    line-height: 0.9;
+}
+.header__text {
+    color: var(--color-dark-gr-magenta);
+}
+.ratings-bg {
+    background-color: var(--color-light-gr-magenta);
+    padding: 0.7em 1em 0.5em;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+.ratings-bg:before {
+    content: url(/images/icon-star.svg) " " url(/images/icon-star.svg) " "
+        url(/images/icon-star.svg) " " url(/images/icon-star.svg) " "
+        url(/images/icon-star.svg);
+}
+.ratings__title {
+    color: var(--color-vDark-magenta);
+    margin: 0.5rem auto;
+}
+
+.testimonies-bg:first-of-type {
+    margin-top: 3rem;
+}
+
+.testimonies-bg {
+    background-color: var(--color-vDark-magenta);
+    color: var(--color-white);
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 8px;
+    padding: 2em 1em;
+    text-align: left;
+}
+
+.testimony__buyer-Colton,
+.testimony__buyer-Irene,
+.testimony__buyer-Anne {
+    width: 10%;
+    border-radius: 100px;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.testimony__buyer,
+.testimony__text {
+    padding: 0 1em;
+    display: inline-block;
+}
+
+.testimony__text {
+    margin-inline: 0;
+}
+.testimony-verified {
+    color: var(--color-soft-pink);
+}
+/* Atribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
